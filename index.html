@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>合作社商城</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌾 合作社線上商城</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="搜尋商品...">
+      <button onclick="searchProducts()">搜尋</button>
+      <a href="cart.html" class="cart-btn">🛒 購物車 (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main>
+    <div id="category-container"></div>
+    <div id="product-list" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 農業合作社商城</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    loadProducts();
+  </script>
+</body>
+</html>

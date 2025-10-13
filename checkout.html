@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>結帳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>📦 結帳資訊</h1></header>
+
+  <main>
+    <form id="orderForm">
+      <label>姓名：<input type="text" id="name" required></label><br>
+      <label>電話：<input type="tel" id="phone" required></label><br>
+      <label>地址：<input type="text" id="address" required></label><br>
+      <button type="submit">送出訂單</button>
+    </form>
+  </main>
+
+  <footer><a href="cart.html">← 回購物車</a></footer>
+
+  <script src="script.js"></script>
+  <script>
+    handleCheckout();
+  </script>
+</body>
+</html>
